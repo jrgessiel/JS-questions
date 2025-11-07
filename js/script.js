@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navigator.clipboard.writeText(resultsString)
                 .then(() => {
                     // Sucesso!
-                    copyButton.innerHTML = '<i class="fa-solid fa-check"></i> Copiado! (só colar no chat)';
+                    copyButton.innerHTML = '<i class="fa-solid fa-check"></i> Copiado!';
                     copyButton.disabled = true;
                 })
                 .catch(err => {
@@ -182,4 +182,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Renderiza a primeira pergunta ao carregar a página
     renderQuestion();
+
 });
